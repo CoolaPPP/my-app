@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 
 export default function Home() {
-  const router = useRouter();
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-[#D7CCC8] to-[#A1887F] p-6">
@@ -12,12 +11,9 @@ export default function Home() {
         <p className="text-lg leading-relaxed text-[#6D4C41]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita quasi debitis. Praesentium dicta doloremque illo recusandae, quos sapiente aperiam ipsam quo? At itaque, ex blanditiis exercitationem vitae deleniti fuga?
         </p>
-        <button
-          onClick={() => router.push("/our-team")}
-          className="mt-6 px-6 py-2 bg-[#8D6E63] text-white font-semibold rounded-full shadow-md hover:bg-[#6D4C41] hover:scale-105 transition-all"
-        >
+        <a href="/our-team" className="mt-6 inline-block bg-blue-500 text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-blue-600 transition duration-300">
           Our Team
-        </button>
+        </a>
       </div>
     </div>
   );
