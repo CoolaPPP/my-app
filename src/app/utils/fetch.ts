@@ -60,8 +60,7 @@ export const fetchApi = async <T>(
  
         // ตรวจสอบว่าการเรียก API สำเร็จหรือไม่
         if (!response.ok) {
-            // throw new Error("Failed to fetch team members"); // ถ้าไม่สำเร็จให้โยน error
-            console.log(response)
+            throw new Error("Failed to fetch team members"); // ถ้าไม่สำเร็จให้โยน error
         }
  
         // แปลงข้อมูลที่ได้จาก API เป็น JSON
@@ -73,7 +72,7 @@ export const fetchApi = async <T>(
             status: response.status,
         };
     } catch (error: unknown) {
-      console.log(error)
+        // ถ้ามีข้อผิดพลาด ให้ส่งค่ากลับพร้อม error message
         return { data: null, status: 500, error: "error" };
     }
 };
