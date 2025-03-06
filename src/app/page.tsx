@@ -11,7 +11,7 @@ export default function Home() {
         <p className="text-lg leading-relaxed text-[#6D4C41]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita quasi debitis. Praesentium dicta doloremque illo recusandae, quos sapiente aperiam ipsam quo? At itaque, ex blanditiis exercitationem vitae deleniti fuga?
         </p>
-        <a href="/our-team" className="mt-6 inline-block bg-blue-500 text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-blue-600 transition duration-300">
+        <a href="/our-team" className="mt-6 inline-block bg-gray-900 text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-gray-900 transition duration-300">
           Our Team
         </a>
       </div>
