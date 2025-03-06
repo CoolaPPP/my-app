@@ -8,6 +8,11 @@ export const setAccessToken = async (token: string) => {
     maxAge: 60 * 60 * 24 * 30,
   });
 };
+
+export const removeAccessToken = async () => {
+  const cookie = await cookies();
+  cookie.delete("access_token");
+}
  
 export const fetchActionApi = async <T>(
   path: string,
